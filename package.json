@@ -63,7 +63,7 @@
     "@tryghost/members-ssr": "1.0.2",
     "@tryghost/mw-session-from-token": "0.1.19",
     "@tryghost/promise": "0.1.8",
-    "@tryghost/security": "0.2.8",
+    "@tryghost/security": "0.3.3",
     "@tryghost/session-service": "0.1.20",
     "@tryghost/social-urls": "0.1.23",
     "@tryghost/string": "0.1.18",
