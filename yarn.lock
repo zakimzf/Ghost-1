@@ -6152,10 +6152,10 @@ mocha@8.3.2, mocha@^8.2.0:
     yargs-parser "20.2.4"
     yargs-unparser "2.0.0"
 
-mock-knex@0.4.9:
-  version "0.4.9"
-  resolved "https://registry.yarnpkg.com/mock-knex/-/mock-knex-0.4.9.tgz#af831d376500483d6499469eb847842490af04c3"
-  integrity sha512-w8BZXdKeNtPxcXu/cnJVCv+/e+Nxs8sfDulxfV/MK2+NErxbv/NYkQA7Kr15TNYA8Q51WyFTwD4bNQB9/YWotw==
+mock-knex@0.4.12:
+  version "0.4.12"
+  resolved "https://registry.yarnpkg.com/mock-knex/-/mock-knex-0.4.12.tgz#378ae3689dc831b48046279c97933a8975d64882"
+  integrity sha512-3RmuTdePOJIG/o9X8kHV7fw6+5vriE/zr4YQ4DU6VPAbwL5hDUIKignE4Zyj4B44SyBxYjw+gJcXD+meEkQj8g==
   dependencies:
     bluebird "^3.4.1"
     lodash "^4.14.2"
