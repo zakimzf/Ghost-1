@@ -46,7 +46,7 @@
     "@tryghost/bootstrap-socket": "0.2.8",
     "@tryghost/constants": "0.1.7",
     "@tryghost/email-analytics-provider-mailgun": "1.0.0",
-    "@tryghost/email-analytics-service": "1.0.0",
+    "@tryghost/email-analytics-service": "1.0.7",
     "@tryghost/errors": "0.2.11",
     "@tryghost/helpers": "1.1.43",
     "@tryghost/image-transform": "1.0.11",
