@@ -428,12 +428,20 @@
     ghost-ignition "^4.2.4"
     lodash "^4.17.20"
 
-"@tryghost/errors@0.2.11", "@tryghost/errors@^0.2.10", "@tryghost/errors@^0.2.11", "@tryghost/errors@^0.2.9":
+"@tryghost/errors@0.2.11":
   version "0.2.11"
   resolved "https://registry.yarnpkg.com/@tryghost/errors/-/errors-0.2.11.tgz#db42d49c6e703b46efa2097cfafcf3d401789c07"
   integrity sha512-OKVaefe6YxNZkhsJzqvzBs4wFA4XCkqcguzJikK6qGaJ+w1hjqGLOab9d1AJ8bLCVFTzptv24jjT/CHY9g5Ojg==
   dependencies:
     ghost-ignition "^4.6.1"
+    lodash "^4.17.21"
+
+"@tryghost/errors@^0.2.10", "@tryghost/errors@^0.2.11", "@tryghost/errors@^0.2.17", "@tryghost/errors@^0.2.9":
+  version "0.2.17"
+  resolved "https://registry.yarnpkg.com/@tryghost/errors/-/errors-0.2.17.tgz#9b89f3845256ace5650593f41cc86d64965b56ed"
+  integrity sha512-Mj+bedWOwfooNA8fQdp6gIcRvWcKhJ/hOyGzu6OLFDLgEosFEeuFgXE6SsAWkf9+9NTYX30w88qGIWZqOhEAmQ==
+  dependencies:
+    "@tryghost/ignition-errors" "^0.1.0"
     lodash "^4.17.21"
 
 "@tryghost/helpers@1.1.43":
@@ -451,6 +459,14 @@
     "@tryghost/kg-parser-plugins" "^1.1.7"
     "@tryghost/mobiledoc-kit" "^0.12.4-ghost.1"
     jsdom "^16.5.3"
+
+"@tryghost/ignition-errors@^0.1.0":
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/@tryghost/ignition-errors/-/ignition-errors-0.1.8.tgz#6d4c4d4e02d32403ca1e574eaa91b3c0d138d6f6"
+  integrity sha512-4KYU+kDXZyP7tmzyHiUkfDy9RWxKAtA/6xTGdxYHurE5ZlT++cDDfdUtF0v3308GGUzKlBzRc3jmLjDYpngcBQ==
+  dependencies:
+    lodash "^4.17.21"
+    uuid "^8.3.2"
 
 "@tryghost/image-transform@1.0.11":
   version "1.0.11"
@@ -527,12 +543,14 @@
   dependencies:
     "@tryghost/kg-clean-basic-html" "^1.0.17"
 
-"@tryghost/limit-service@0.4.2":
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/@tryghost/limit-service/-/limit-service-0.4.2.tgz#3f096d3f0b158ffb51411cb7f0f772fd216c5fce"
-  integrity sha512-bFT2nsLVJdfIKirHsLEoZk2ZDF9Gx0tSJomfoDRyc5iGnI7Vgy3FTemlAXjM50NfFH1VCFBZiH81QeoTxa7vbw==
+"@tryghost/limit-service@0.6.5":
+  version "0.6.5"
+  resolved "https://registry.yarnpkg.com/@tryghost/limit-service/-/limit-service-0.6.5.tgz#59c98edd697828837bf0133acf6ab612a19d7848"
+  integrity sha512-OuCe4oXE9h8zlJV9YdhLbnZXv+JtNEAyg60q6DCoOMwTistHlMaNx7FLxKaOzNsSSOSY5Nz+V1Bm/7/ed7WFXg==
   dependencies:
+    "@tryghost/errors" "^0.2.17"
     lodash "^4.17.21"
+    luxon "^1.26.0"
 
 "@tryghost/magic-link@1.0.2", "@tryghost/magic-link@^1.0.2":
   version "1.0.2"
@@ -5750,6 +5768,11 @@ lru_map@^0.3.3:
   resolved "https://registry.yarnpkg.com/lru_map/-/lru_map-0.3.3.tgz#b5c8351b9464cbd750335a79650a0ec0e56118dd"
   integrity sha1-tcg1G5Rky9dQM1p5ZQoOwOVhGN0=
 
+luxon@^1.26.0:
+  version "1.28.1"
+  resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.28.1.tgz#528cdf3624a54506d710290a2341aa8e6e6c61b0"
+  integrity sha512-gYHAa180mKrNIUJCbwpmD0aTu9kV0dREDrwNnuyFAsO1Wt0EVYSZelPnJlbj9HplzXX/YWXHFTL45kvZ53M0pw==
+
 mailcomposer@~0.2.10:
   version "0.2.12"
   resolved "https://registry.yarnpkg.com/mailcomposer/-/mailcomposer-0.2.12.tgz#4d02a604616adcb45fb36d37513f4c1bd0b75681"
@@ -9272,7 +9295,7 @@ utils-merge@1.0.1, utils-merge@1.x.x:
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
 
-uuid@8.3.2:
+uuid@8.3.2, uuid@^8.3.2:
   version "8.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
